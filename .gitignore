@@ -1,0 +1,69 @@
+#用于忽略tabout中文档或码值图，避免节点切换导致使用了错误版本的文档
+tabout/**/*.png
+tabout/**/*.json
+
+#ufw可用fw转换，移除以节省仓库空间
+*.ufw 
+
+#移除交付烧录文件，避免切换节点导致末尾为错误版本的固件文件
+/烧录
+
+
+##以下为编译中间件
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+*.bc
+*.lst
+*.bin
+
